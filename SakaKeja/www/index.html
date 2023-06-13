@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sakaKeja</title>
+
+    <!-- fonts google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- unicons -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="home">
+      <header>
+        <div class="logo">
+          <h2>saka<strong>Keja</strong></h2>
+        </div>
+
+        <div class="hamburger" id="ham" onclick="show()">
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <nav id="menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#About Us">About Us</a></li>
+
+            <li>
+              <a href="#"
+                >Pages<span><i class="bx bxs-chevron-down"></i></span
+              ></a>
+              <div class="sub-menu-1">
+                <ul>
+                  <li><a href="properties.html">Properties</a></li>
+                  <li><a href="">Host Page</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" onclick="pop()" id="SignIn">Sign In</a>
+
+              <div class="popUP" id="popUp">
+                <div class="Details">
+                  <i class="bx bx-x" onclick="popOut()"></i>
+                  <div class="titleD">
+                    <h4>Sign In</h4>
+                  </div>
+                  <label for="uEmail">USERNAME OR EMAIL</label>
+                  <input type="text" type="email" id="uEmail" />
+
+                  <label for="Password">PASSWORD</label>
+                  <input type="password" id="Password" />
+                </div>
+
+                <div class="signBtn">
+                  <button type="submit">Sign In</button>
+                </div>
+
+                <div class="popTxt">
+                  <h6>Don't have an account?<a href="#">Register</a></h6>
+                  <p><a href="#">Forgot Password</a></p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <button><a href="SignIn.html">List a Propety</a></button>
+      </header>
+
+      <div class="hero">
+        <div class="heroTxt">
+          <h1>
+            Rent Unique Apartments <br />
+            around your area
+          </h1>
+          <p>
+            Get instant access to an expertly curated List of unique
+            apartments,<br />
+            rooms and houses for rent.
+          </p>
+          <button><a href="properties.html">Browse</a></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Page -->
+    <div class="About" id="About Us">
+      <div class="heading">
+        <h1>About Us</h1>
+      </div>
+      <div class="aboutTxt">
+        <p>
+          Tired of walking all day looking for apartments? Having to advertise
+          all the time? Here is a solution for that. <br />
+          Saka Keja is a website that allows for an opportunity to find and host
+          apartments and houses easily in Kenya. <br />
+          Get to browse for an apartment that is of your choice easily, quickly
+          and get to interact personnaly with host and clients.
+        </p>
+      </div>
+      <div class="row">
+        <div class="colunm1">
+          <div class="icon">
+            <i class="bx bxs-key"></i>
+          </div>
+          <div class="colunmTxt">
+            <h2>Rent a Property</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="colunmBtn">
+            <button><a href="properties.html">Find a Property</a></button>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="colunm2">
+          <div class="icon">
+            <i class="bx bx-home"></i>
+          </div>
+          <div class="colunmTxt">
+            <h2>Become a Host</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="colunmBtn">
+            <button><a href="SignIn.html">List a Property</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
